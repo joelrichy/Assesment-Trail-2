@@ -5,8 +5,8 @@ class Questions:
         self.answer = answer
         self.question_list = []
         self.question_list.append(question)
-        global incorrect_list
-        incorrect_list = []
+        #global incorrect_list
+        #incorrect_list = []
         global question_num
         question_num += 1
 
@@ -29,7 +29,7 @@ def display_stats():
     print("##### YOUR STATS #####")
     print("You got {} question correct".format(correct))
     print("######################")
-    print("You got these questions wrong:\n {}, ".format(incorrect_list))
+    print("You need to work on these questions:\n {}, ".format(incorrect_list))
     print("######################")
 
 
@@ -60,5 +60,6 @@ while question_num != 8:
     elif question_num == 7:
         question7 = Questions("What is Sunday in Maori", "Rātapu")
         question7.ask_questions()
+
 
 display_stats()
