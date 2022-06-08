@@ -20,12 +20,12 @@ def print_question():
 
 question_list = []
 
-question1 = Questions("What is Monday in Maori", "Rāhina")
-question2 = Questions("What is Tuesday in Maori","Rātū")
-question3 = Questions("What is Wednesday in Maori", "Rāapa")
-question4 = Questions("What is Thursday in Maori", "Rāpare")
-question5 = Questions("What is Friday in Maori", "Rāmere")
-question6 = Questions("What is Saturday in Maori", "Rāhoroi")
-question7 = Questions("What is Sunday in Maori", "Rātapu")
+question1 = Questions("What is Monday in Māori", "Rāhina")
+question2 = Questions("What is Tuesday in Māori","Rātū")
+question3 = Questions("What is Wednesday in Māori", "Rāapa")
+question4 = Questions("What is Thursday in Māori", "Rāpare")
+question5 = Questions("What is Friday in Māori", "Rāmere")
+question6 = Questions("What is Saturday in Māori", "Rāhoroi")
+question7 = Questions("What is Sunday in Māori", "Rātapu")
 
 print_question()
