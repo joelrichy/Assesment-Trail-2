@@ -5,8 +5,6 @@ class Questions:
         self.answer = answer
         self.question_list = []
         self.question_list.append(question)
-        #global incorrect_list
-        #incorrect_list = []
         global question_num
         question_num += 1
 
@@ -26,11 +24,11 @@ class Questions:
 
 def display_stats():
     print()
-    print("##### YOUR STATS #####")
+    print("########## YOUR STATS ##########")
     print("You got {} question correct".format(correct))
-    print("######################")
-    print("You need to work on these questions:\n {}, ".format(incorrect_list))
-    print("######################")
+    print("################################")
+    print("You need to work on these questions:\n {}, \n ".format(incorrect_list))
+    print("################################")
 
 
 question_num = 1
@@ -38,6 +36,20 @@ correct = 0
 incorrect_list = []
 
 # main routine
+
+start = ''
+
+while start != "q":
+    print("Welcome to the Māori Days of the Week quiz.")
+    print()
+    print("When answering questions please make sure to start your answers with a Capital letter. \n"
+          "Also please make sure to include any macrons (ā) in your answer. \n"
+          "These macrons can be found by pressing and"
+          "holding a the letter you would like to put the macron on.")
+    print()
+    start = input("Press 'q' to start quiz: ")
+    print()
+
 while question_num != 8:
     if question_num == 1:
         question1 = Questions("What is Monday in Maori", "Rāhina")
